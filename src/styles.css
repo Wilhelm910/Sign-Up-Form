@@ -1,0 +1,149 @@
+:root {
+    --font-color: rgb(255, 255, 255);
+    --button-color: rgb(214, 78, 24);
+    --main-color: rgb(4, 4, 29);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+   
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main-color);
+   
+}
+
+.numbers {
+    height: 100vh;
+    width: 40vw;
+    object-fit: cover;
+}
+
+.heading {
+    background-color: rgba(7, 7, 20, 0.6);
+    position: absolute;
+    width: 40vw;
+    object-fit: cover;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.logo{
+    height: 150px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+h1 {
+    margin-left: 10px;
+    font-size: 45px;
+    color: var(--font-color)
+}
+
+h2 {
+    margin-left: 40px;
+    padding-top: 15px;
+}
+
+.content {
+    background-color: var(--main-color);
+    width: 60vw;
+    height: 100vh;
+}
+
+.intro {
+    
+    padding: 40px;
+}
+p {
+    color: var(--font-color)
+}
+
+section {
+    color: var(--font-color)
+}
+
+.sign_in {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sign_in_left, .sign_in_right {
+    margin: 40px;
+    display: flex;
+    flex-direction: column
+}
+
+.container {
+    background-color: rgb(3, 5, 22);
+    box-shadow: 0px 0px 15px 0px rgba(168, 153, 153, 0.2);
+}
+
+button {
+    margin: 50px 0 0 40px;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--button-color);
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--button-color);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--main-color);
+}
+
+caption {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+input {
+    margin: 5px;
+    width: 180px;
+    height: 20px;
+    background-color: var(--main-color);
+    border: 1px solid rgb(71, 69, 69);
+    border-radius: 2px;
+    color: rgb(150, 140, 140);
+    
+    
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--button-color);
+}
+
+.log_in {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.link {
+    color: var(--button-color);
+    text-decoration: none;
+}
